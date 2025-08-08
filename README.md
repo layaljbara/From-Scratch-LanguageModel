@@ -10,7 +10,7 @@ Includes raw-text preprocessing, vocabulary encoding, sliding-window sequence ge
 
 ---
 
-## 📂 Dataset and Preprocessing  
+## Dataset and Preprocessing  
 We use a recipe dataset containing **4,869 recipes** stored in a single text file.  
 
 **Preprocessing workflow:**  
@@ -20,7 +20,7 @@ We use a recipe dataset containing **4,869 recipes** stored in a single text fil
 
 ---
 
-## 🧠 Model Training  
+## Model Training  
 The neural network is trained using:  
 - **Input:** 50-word encoded sequences.  
 - **Target:** The next word in the dataset.  
@@ -29,14 +29,14 @@ Training was performed on a GPU and required **over 12 hours** to reach the curr
 
 ---
 
-## ✍️ Text Generation  
+## Text Generation  
 Once trained, the model can generate new recipes by:  
 1. Taking a randomly selected 50-word sentence as a seed.  
 2. Iteratively predicting and appending the next word until a complete recipe is formed.  
 
 ---
 
-## ✅ Results  
+## Results  
 
 ### Strengths  
 - Generates an appropriate recipe title.  
@@ -50,7 +50,7 @@ Once trained, the model can generate new recipes by:
 
 ---
 
-## 🚀 Future Improvements  
+## Future Improvements  
 - Further training to improve consistency between ingredient lists and instructions.  
 - Expanding the dataset for richer vocabulary and recipe diversity.  
 
